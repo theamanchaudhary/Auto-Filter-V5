@@ -12,10 +12,10 @@ def is_enabled(value, default):
 
 # Bot information
 PORT = environ.get("PORT", "8080")
-SESSION = environ.get('SESSION', 'Acseriesbot')
+SESSION = environ.get('SESSION', 'auto_filter_v21_bot')
 API_ID = int(environ.get('API_ID', '27145222'))
 API_HASH = environ.get('API_HASH', 'c4daa51a5d5b84da0e1462ce858edabf')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6256037947:AAGWCVcRDG6dnEYlb3flWLD9Ha_O_Cg_NRE")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6275129295:AAGBxH76s6nP5MsgB_SdwHdGmKZUZrWWGIU")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -28,7 +28,7 @@ NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/07c14729659c7c2b99f5a.jp
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5674333293').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001837860287').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001764312434').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5674333293').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -42,16 +42,16 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/cynitesupport')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/cynitebackup')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/cynitesupport')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/rampagebackup')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/rampagebackup')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/rampagebackup')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001764312434))
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', -1001837860287))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/cynitebackup')
-HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/cynitemovies/3')
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/rampagebackup')
+HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/howto_open_oggylink')
 
 # Log Channels
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001910513374))
