@@ -1181,7 +1181,7 @@ async def advantage_spell_chok(msg):
         ),
         InlineKeyboardButton(
             text="ʀᴇᴘᴏʀᴛ ʜᴇʀᴇ",
-            url=f"t.me/{SUPPORT_CHAT}"
+            url=f"t.me/theamanchaudhary{SUPPORT_CHAT}"
         )
     ],[
         InlineKeyboardButton(
