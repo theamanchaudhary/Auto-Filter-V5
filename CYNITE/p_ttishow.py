@@ -13,7 +13,7 @@ from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 
-"""-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
+"""-----------------------------------------https://t.me/rampagebackup --------------------------------------"""
 BOT_START_TIME = time.time()
 
 @Client.on_message(filters.new_chat_members & filters.group)
@@ -44,7 +44,7 @@ async def save_group(bot, message):
             return
         buttons = [[
                     InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url=CHNL_LNK),
-                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʜᴇʀᴇ', url=f"https://t.me/CyniteSupport")
+                    InlineKeyboardButton('ʀᴇᴘᴏʀᴛ ʜᴇʀᴇ', url=f"https://t.me/rampagebackup")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -56,7 +56,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton("ɢʀᴏᴜᴘ📌", url="https://t.me/cynitesupport")
+                InlineKeyboardButton("ɢʀᴏᴜᴘ📌", url="https://t.me/rampagebackup")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
